@@ -10,7 +10,6 @@ setup(
     author_email='rickynite@gmail.com',
     url='https://github.com/rickynite/RfPart',
     license='LGPL-2.1',
-    packages=find_packages(),
     install_requires=['numpy'],
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -22,4 +21,6 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
+    packages=(find_packages(include=['RfPart','RfPart.*'])),
+    python_requires='>=3.6'
 )
